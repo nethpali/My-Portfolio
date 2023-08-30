@@ -1,0 +1,478 @@
+section>nav{
+    width: 1500px;
+    height: 50px;
+    background-color: #BDC3C7;
+}
+body{
+    background-color: #2C3E50;
+    animation: change 6s;
+    /*animation-fill-mode: revert;*/
+}
+
+/*@keyframes change {*/
+/*    from { background-color: #CAD3C8; }*/
+/*    to { background-color: #2C3E50; }*/
+
+/*}*/
+section>nav>div:first-child{
+    left: 0%;
+    position: absolute;
+}
+
+section>nav>#navigation:nth-child(2){
+    right: 0%;
+    position: absolute;
+    padding: 15px;
+    font-weight: bold;
+}
+section>nav>#navigation:nth-child(2)>a:link {
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navigation{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+
+    animation: flip 2s infinite;
+
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg)
+    }
+}
+section>div>img{
+    position: absolute;
+    border-radius: 50px;
+    top: 150px;
+    right: 100px;
+    border:  2px solid #2C3E50 ;
+    animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+section>div>p:first-child{
+    font-size: 50px;
+    top: 100px;
+    right: 650px;
+    padding-top: 100px;
+    font-weight: bold;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+    position: absolute;
+}
+section>div>p:first-child:hover{
+    color: #0000;
+    background:
+            radial-gradient(circle, rgba(212,2,249,1) 28%, rgba(250,251,61,1) 53%, rgba(0,212,255,1) 100%)
+            var(--c,0%)/200% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: .5s;
+    --c:100%;
+}
+
+
+section>div>p:nth-child(2){
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 320px;
+    right: 720px;
+    color: white;
+
+}
+
+#instagram{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    right: 950px;
+    top:400px ;
+    border-radius: 10px;
+}
+#instagram:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000000;
+}
+#instagram:hover{
+    color: #000000;
+    box-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 5px #000000;
+}
+#linkedin{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    right: 910px;
+    top:400px ;
+    border-radius: 10px;
+}
+#linkedin:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000000;
+}
+#linkedin:hover{
+    color: #000000;
+    box-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 5px #000000;
+}
+#github{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    right: 870px;
+    top:400px ;
+    border-radius: 10px;
+}
+#github:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000000;
+}
+#github:hover{
+    color: #000000;
+    box-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 5px #000000;
+}
+#twitter{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    right: 830px;
+    top:400px ;
+    border-radius: 10px;
+}
+#twitter:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000000;
+}
+#twitter:hover{
+    color: #000000;
+    box-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 5px #000000;
+}
+#facebook{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    position: absolute;
+    right: 790px;
+    top:400px ;
+    border-radius: 10px;
+}
+#facebook:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #000000;
+}
+#facebook:hover{
+    color: #000000;
+    box-shadow: 0 0 5px #000000;
+    text-shadow: 0 0 5px #000000;
+}
+
+#About-me>:root {
+    --primary-color: #6CD9CE;
+    --secondary-color: #D93BA1;
+    --complimentary-color: #2E2473;
+}
+
+#About-me{
+    width: 1500px;
+    height: 60px;
+    background-color: #BDC3C7;
+}
+#About-me>h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    right: 900px;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+
+
+}
+#About-me>img{
+    /*border-radius: 50px;*/
+    position: absolute;
+    right: 500px;
+    --s: 12px;  /* size of the frame */
+    --b: 2px;   /* border thickness */
+    --w: 300px; /* width of the image */
+    --c: #0a3d62;
+
+    width: var(--w);
+    aspect-ratio: 1;
+    object-fit: cover;
+    padding: calc(2*var(--s));
+    --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+    background:
+            linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+            linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+    outline: calc(var(--w)/2) solid #0009;
+    outline-offset: calc(var(--w)/-2 - 2*var(--s));
+    transition: .4s;
+    cursor: pointer;
+}
+
+#About-me>img:hover{
+    outline: var(--b) solid var(--c);
+    outline-offset: calc(var(--s)/-2);
+    --_i: calc(100% - 2*var(--s));
+}
+
+
+#About-me>h4{
+    /*text-align: center;*/
+    position: absolute;
+    right:400px;
+    top: 1190px;
+    font-family: 'Alumni Sans Inline One', cursive;
+    font-size: 25px;
+    color: hsla(0, 0%, 0%, .9);
+    /*font: normal 30px Varela Round, sans-serif;*/
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    animation: move linear 2000ms infinite;
+}
+@keyframes move {
+    0% {
+        text-shadow:
+                4px -4px 0 hsla(0, 100%, 50%, 1),
+                3px -3px 0 hsla(0, 100%, 50%, 1),
+                2px -2px 0 hsla(0, 100%, 50%, 1),
+                1px -1px 0 hsla(0, 100%, 50%, 1),
+                -4px 4px 0 hsla(180, 100%, 50%, 1),
+                -3px 3px 0 hsla(180, 100%, 50%, 1),
+                -2px 2px 0 hsla(180, 100%, 50%, 1),
+                -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+    }
+    25% {
+        text-shadow:
+                -4px -4px 0 hsla(180, 100%, 50%, 1),
+                -3px -3px 0 hsla(180, 100%, 50%, 1),
+                -2px -2px 0 hsla(180, 100%, 50%, 1),
+                -1px -1px 0 hsla(180, 100%, 50%, 1),
+                4px 4px 0 hsla(0, 100%, 50%, 1),
+                3px 3px 0 hsla(0, 100%, 50%, 1),
+                2px 2px 0 hsla(0, 100%, 50%, 1),
+                1px 1px 0 hsla(0, 100%, 50%, 1)
+    ;
+    }
+    50% {
+        text-shadow:
+                -4px 4px 0 hsla(0, 100%, 50%, 1),
+                -3px 3px 0 hsla(0, 100%, 50%, 1),
+                -2px 2px 0 hsla(0, 100%, 50%, 1),
+                -1px 1px 0 hsla(0, 100%, 50%, 1),
+                4px -4px 0 hsla(180, 100%, 50%, 1),
+                3px -3px 0 hsla(180, 100%, 50%, 1),
+                2px -2px 0 hsla(180, 100%, 50%, 1),
+                1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+    }
+    75% {
+        text-shadow:
+                4px 4px 0 hsla(180, 100%, 50%, 1),
+                3px 3px 0 hsla(180, 100%, 50%, 1),
+                2px 2px 0 hsla(180, 100%, 50%, 1),
+                1px 1px 0 hsla(180, 100%, 50%, 1),
+                -4px -4px 0 hsla(0, 100%, 50%, 1),
+                -3px -3px 0 hsla(0, 100%, 50%, 1),
+                -2px -2px 0 hsla(0, 100%, 50%, 1),
+                -1px -1px 0 hsla(0, 100%, 50%, 1)
+    ;
+    }
+    100% {
+        text-shadow:
+                4px -4px 0 hsla(0, 100%, 50%, 1),
+                3px -3px 0 hsla(0, 100%, 50%, 1),
+                2px -2px 0 hsla(0, 100%, 50%, 1),
+                1px -1px 0 hsla(0, 100%, 50%, 1),
+                -4px 4px 0 hsla(180, 100%, 50%, 1),
+                -3px 3px 0 hsla(180, 100%, 50%, 1),
+                -2px 2px 0 hsla(180, 100%, 50%, 1),
+                -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+    }
+}
+
+
+#About-me>p{
+    text-align: center;
+    position: absolute;
+    right:250px;
+    top: 1250px;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+#About-me>button{
+    font-size: 15px;
+    background-color:#D1CCC0;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    border: aqua;
+    right:600px;
+    top: 1349px;
+}
+
+
+#About-me>button:hover{
+    background-color:#3C6382;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+#Projects{
+    width: 1500px;
+    height: 60px;
+    background-color: #BDC3C7;
+}
+
+#Projects>h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 12px;
+    right: 1000px;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+}
+.verticle{
+    border-left: 6px solid black;
+    height: 980px;
+    position:absolute;
+    left: 680px;
+    top: 1530px;
+}
+.line1 {
+    border-bottom: 5px solid black;
+    width: 50px;
+    position: absolute;
+    top: 1560px;
+    right: 700px;
+}
+.line2{
+    border-bottom: 5px solid black;
+    width: 50px;
+    position: absolute;
+    top: 1780px;
+    right: 650px;
+}
+.line3{
+    border-bottom: 5px solid black;
+    width: 50px;
+    position: absolute;
+    top: 2020px;
+    right: 700px;
+}
+.line4{
+    border-bottom: 5px solid black;
+    width: 50px;
+    position: absolute;
+    top: 2280px;
+    right: 650px;
+}
+
+#Projects>#project1{
+    width: 400px;
+    height: 200px;
+    background-color: #D1CCC0;
+    border-radius: 20px;
+    right:750px;
+    top: 1590px;
+    position: absolute;
+}
+#Projects>#project1:hover{
+    background-color: #0a3d62;
+}
+
+#Projects>#project2{
+    width: 400px;
+    height: 200px;
+    background-color: #D1CCC0;
+    border-radius: 20px;
+    right:250px;
+    top: 1820px;
+    position: absolute;
+}
+#Projects>#project3{
+    width: 400px;
+    height: 200px;
+    background-color: #D1CCC0;
+    border-radius: 20px;
+    right:750px;
+    top: 2080px;
+    position: absolute;
+}
+#Projects>#project4{
+    width: 400px;
+    height: 200px;
+    background-color: #D1CCC0;
+    border-radius: 20px;
+    right:250px;
+    top: 2320px;
+    position: absolute;
+}
+#roosalu>img{
+    position: absolute;
+    top: 1550px;
+    right:1120px;
+}
+#roosalu>p{
+    position: absolute;
+    top: 1520px;
+    right:850px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+#connect>img{
+    right:600px;
+    top: 1770px;
+    position: absolute;
+}
+#connect>p{
+    position: absolute;
+    right:400px;
+    top: 1755px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+#ChatApplication>img{
+    right:1120px;
+    top: 2015px;
+    position: absolute;
+}
+#ChatApplication>p{
+    position: absolute;
+    right:945px;
+    top: 2000px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+#Layed>img{
+    right:600px;
+    top: 2270px;
+    position: absolute;
+}
+#Layed>p{
+    position: absolute;
+    right:275px;
+    top: 2255px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
