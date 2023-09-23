@@ -28,20 +28,21 @@ section>nav>#navigation:nth-child(2){
 section>nav>#navigation:nth-child(2)>a:link {
     text-decoration: none;
     border-radius: 20px;
+    color: white;
 }
 #navigation{
     position: relative;
     display: inline-block;
     color: #fff;
 
-    animation: flip 2s infinite;
+    /*animation: flip 2s infinite;*/
 
 }
-@keyframes flip {
-    0%,80% {
-        transform: rotateY(360deg)
-    }
-}
+/*@keyframes flip {*/
+/*    0%,80% {*/
+/*        transform: rotateY(360deg)*/
+/*    }*/
+/*}*/
 section>div>img{
     position: absolute;
     border-radius: 50px;
@@ -193,8 +194,9 @@ section>div>p:nth-child(2){
     font-size: 30px;
     text-align: center;
     padding: 15px;
-    right: 900px;
-    font-family: 'Rubik Iso', cursive;
+    left: 700px;
+    /*font-family: 'Rubik Iso', cursive;*/
+    font-family: 'DM Serif Display', serif;
     color: white;
 
 
@@ -262,10 +264,10 @@ section>div>p:nth-child(2){
                 -3px -3px 0 hsla(180, 100%, 50%, 1),
                 -2px -2px 0 hsla(180, 100%, 50%, 1),
                 -1px -1px 0 hsla(180, 100%, 50%, 1),
-                4px 4px 0 hsla(0, 100%, 50%, 1),
-                3px 3px 0 hsla(0, 100%, 50%, 1),
-                2px 2px 0 hsla(0, 100%, 50%, 1),
-                1px 1px 0 hsla(0, 100%, 50%, 1)
+                 4px 4px 0 hsla(0, 100%, 50%, 1),
+                 3px 3px 0 hsla(0, 100%, 50%, 1),
+                 2px 2px 0 hsla(0, 100%, 50%, 1),
+                 1px 1px 0 hsla(0, 100%, 50%, 1)
     ;
     }
     50% {
@@ -345,7 +347,8 @@ section>div>p:nth-child(2){
     text-align: center;
     padding: 12px;
     right: 1000px;
-    font-family: 'Rubik Iso', cursive;
+    /*font-family: 'Rubik Iso', cursive;*/
+    font-family: 'DM Serif Display', serif;
     color: white;
 }
 .verticle{
@@ -392,9 +395,11 @@ section>div>p:nth-child(2){
     right:750px;
     top: 1590px;
     position: absolute;
+    background-image: url("/assests/Roosalu.png");
+    background-size: 400px 200px;
+
 }
 #Projects>#project1:hover{
-    background-color: #0a3d62;
 }
 
 #Projects>#project2{
@@ -405,6 +410,8 @@ section>div>p:nth-child(2){
     right:250px;
     top: 1820px;
     position: absolute;
+    background-image: url("/assests/Connecr-four.jpg");
+    background-size: 400px 200px;
 }
 #Projects>#project3{
     width: 400px;
@@ -412,9 +419,13 @@ section>div>p:nth-child(2){
     background-color: #D1CCC0;
     border-radius: 20px;
     right:750px;
-    top: 2080px;
+    top: 2050px;
     position: absolute;
+    background-image: url("/assests/Chat-application.png");
+    background-size: 400px 200px;
 }
+
+
 #Projects>#project4{
     width: 400px;
     height: 200px;
@@ -423,6 +434,8 @@ section>div>p:nth-child(2){
     right:250px;
     top: 2320px;
     position: absolute;
+    background-image: url("/assests/Layed.png");
+    background-size: 400px 200px;
 }
 #roosalu>img{
     position: absolute;
@@ -438,41 +451,406 @@ section>div>p:nth-child(2){
     font-weight: bold;
 }
 #connect>img{
-    right:600px;
-    top: 1770px;
+    right:570px;
+    top: 1768px;
     position: absolute;
 }
 #connect>p{
     position: absolute;
-    right:400px;
-    top: 1755px;
+    right:370px;
+    top: 1752px;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
 }
 #ChatApplication>img{
     right:1120px;
-    top: 2015px;
+    top: 2010px;
     position: absolute;
 }
 #ChatApplication>p{
     position: absolute;
     right:945px;
-    top: 2000px;
+    top: 1996px;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
 }
 #Layed>img{
-    right:600px;
+    right:550px;
     top: 2270px;
     position: absolute;
 }
 #Layed>p{
     position: absolute;
-    right:275px;
+    right:230px;
     top: 2255px;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
+}
+#Projects>#icon1{
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #BDC3C7;
+    position: absolute;
+    top: 1545px;
+    right:730px;
+}
+#Projects>#icon2{
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #BDC3C7;
+    position: absolute;
+    right:610px;
+    top: 1765px;
+}
+#Projects>#icon3{
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #BDC3C7;
+    position: absolute;
+    right:735px;
+    top: 2008px;
+}
+#Projects>#icon4{
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #BDC3C7;
+    right:600px;
+    top: 2270px;
+    position: absolute;
+
+}
+#Assignments{
+    width: 1500px;
+    height: 60px;
+    background-color: #BDC3C7;
+}
+#Assignments>h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    left: 700px;
+    /*font-family: 'Rubik Iso', cursive;*/
+    font-family: 'DM Serif Display', serif;
+    color: white;
+}
+#project1:hover{
+    box-shadow: 0.4rem 0.4rem 0 #BDC3C7;
+    transform: translate(-0.4rem, -0.4rem);
+}
+#project2:hover{
+    box-shadow: 0.4rem 0.4rem 0 #BDC3C7;
+    transform: translate(-0.4rem, -0.4rem);
+}
+#project3:hover{
+    box-shadow: 0.4rem 0.4rem 0 #BDC3C7;
+    transform: translate(-0.4rem, -0.4rem);
+}
+#project4:hover{
+    box-shadow: 0.4rem 0.4rem 0 #BDC3C7;
+    transform: translate(-0.4rem, -0.4rem);
+}
+#Assignments>#Assignment1{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 2800px;
+    right: 900px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment2{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 2800px;
+    right: 600px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment3{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 2800px;
+    right: 300px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment4{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3100px;
+    right: 900px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment5{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3100px;
+    right: 600px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment6{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3100px;
+    right: 300px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment7{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3400px;
+    right: 900px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment8{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3400px;
+    right: 600px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment9{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3400px;
+    right: 300px;
+    position: absolute;
+    border-radius: 20px;
+}
+#Assignments>#Assignment10{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3700px;
+    right: 750px;
+    position: absolute;
+    border-radius: 20px;
+
+}
+#Assignments>#Assignment11{
+    width: 200px;
+    height: 200px;
+    background-color: #BDC3C7;
+    top: 3700px;
+    right: 450px;
+    position: absolute;
+    border-radius: 20px;
+}
+#A001{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 2790px;
+    right: 925px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A001:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+#A002{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 2790px;
+    right: 625px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A003{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 2790px;
+    right: 325px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A004{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3080px;
+    right: 925px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A005{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3080px;
+    right: 625px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A006{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3080px;
+    right: 325px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A007{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3380px;
+    right: 925px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A008{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3380px;
+    right: 625px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A009{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3380px;
+    right: 325px;;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A010{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3690px;
+    right: 770px;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+#A011{
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 3690px;
+    right:470px;
+    background-color:#2C3E50;
+    border-radius: 10px;
+}
+
+
+#A001>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A002>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A003>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A004>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A005>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A006>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A007>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A008>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A009>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A010>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#A011>h5{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 15px;
+}
+#Assignments>#Assignment1>p{
+    text-align: center;
+}
+#Skills-Education{
+    width: 1500px;
+    height: 60px;
+    background-color: #BDC3C7;
+}
+#Skills-Education>h2{
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    left: 700px;
+    /*font-family: 'Rubik Iso', cursive;*/
+    font-family: 'DM Serif Display', serif;
+    color: white;
+}
+#Skills-Education>#skills {
+    right: 600px;
+    top: 4000px;
+    position: absolute;
+}
+#Education{
+    right: 600px;
+    top: 4400px;
+    position: absolute;
 }
